@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Animated } from 'react-native';
 import styled from 'styled-components/native';
 
-export const Container = styled.ScrollView`
+export const Container = styled(Animated.ScrollView)`
     margin: 0 30px;
 `;
 
@@ -12,7 +12,7 @@ export const Code = styled.View`
 `;
 
 export const Nav = styled.View`
-    margin-top: 30px;
+    margin-top: 25px;
     border-top-width: ${StyleSheet.hairlineWidth}px;
     border-top-color: rgba(255,255,255,0.8);
 `;
@@ -20,7 +20,7 @@ export const Nav = styled.View`
 export const NavItem = styled.View`
     flex-direction: row;
     align-items: center;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom-width: ${StyleSheet.hairlineWidth}px;
     border-bottom-color: rgba(255,255,255,0.8);
 `;
